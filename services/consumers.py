@@ -8,6 +8,7 @@ import os
 ORDER_SERVICE_URL = os.getenv("ORDER_SERVICE_URL", "http://localhost:8000/api/orders/mergepot/")
 FRANCHISE_SERVICE_URL = os.getenv("FRANCHISE_SERVICE_URL", "http://localhost:8000/api/franchises/mergepot/")
 
+
 class MergePotOrderConsumer(AsyncWebsocketConsumer):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
