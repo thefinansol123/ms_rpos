@@ -3,3 +3,5 @@
 
 # Ignore environment variables file
 .env
+*.pyc
+_pycache_/
