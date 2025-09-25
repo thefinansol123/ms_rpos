@@ -5,8 +5,10 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 from django.utils import timezone
 import os
 
-ORDER_SERVICE_URL = os.getenv("ORDER_SERVICE_URL", "http://localhost:8000/api/orders/mergepot/")
-FRANCHISE_SERVICE_URL = os.getenv("FRANCHISE_SERVICE_URL", "http://localhost:8000/api/franchises/mergepot/")
+# ORDER_SERVICE_URL = os.getenv("ORDER_SERVICE_URL", "http://localhost:8000/api/orders/mergepot/")
+# FRANCHISE_SERVICE_URL = os.getenv("FRANCHISE_SERVICE_URL", "http://localhost:8000/api/franchises/mergepot/")
+ORDER_SERVICE_URL = "https://app.buyinfinevo.com/api/orders/mergepot/"
+FRANCHISE_SERVICE_URL = "https://app.buyinfinevo.com/api/franchises/mergepot/"
 
 
 class MergePotOrderConsumer(AsyncWebsocketConsumer):
